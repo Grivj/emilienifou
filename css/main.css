@@ -1,4 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
 
 html {
     color: #222;
@@ -23,6 +25,16 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    line-height: 26px;
+    margin: 30px 0;
 }
 
 audio,
@@ -56,17 +68,314 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+h2 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+
+h1 {
+    text-indent: -9999px;
+    font-size: 10px;
+}
+
+/* header */
+#logo {
+    padding: 30px 0 0 10px;
+}
+
+
+/*Navigation*/
+
+nav li {
+    display: inline-block;
+    padding: 20px 10px 0 10px;
+    letter-spacing: 2px;
+    font-size: 12px;
+
+}
+
+nav li a {
+    color: #000;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 60px 10px 0 10px;
+    outline: none;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+    color: #000;
+}
+
+.cl-effect-3 a {
+    padding: 8px 0;
+}
+
+.cl-effect-3 a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0,0,0,0.1);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
 
 
 
 
 
+/* Call to action */
+
+.calltoaction {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 15px 20px;
+    background-color: green;
+    border-radius: 5px 5px 5px;
+}
+
+a.button {
+    color: white;
+}
+
+
+/* Text align center */
+
+
+#banner, #adresse {
+    text-align: center;
+}
 
 
 
 
 
+/* Text align center */
 
+#banner {
+    font-size: 22px;
+    font-weight: 200;
+    margin: 40px 10px;
+}
+
+
+/* PAGE PSYCHOTHERAPIE */
+
+#banner-img {
+    width: 100%;
+    height: 276px;
+    text-align: center;
+    background: url('../images/bandeau.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+    color: #32414f;
+}
+
+
+
+#banner-img p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    height: 276px;
+    line-height: 276px;
+}
+
+#pourquoi_consulter_right {
+    margin-top: 40px;
+}
+
+.quote {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.quote p {
+    font-weight: 200;
+    line-height: 40px;
+}
+
+#methode {
+    background-color: #f5F5F5;
+}
+
+#pourqui {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+#pourqui div {
+    padding: 5px;
+}
+
+#pourqui .boxout div {
+    background-color: white;
+    padding: 15px;
+    -moz-box-shadow: 0px 5px 5px 0px #cfcfcf;
+    -webkit-box-shadow: 0px 5px 5px 0px #cfcfcf;
+    -o-box-shadow: 0px 5px 5px 0px #cfcfcf;
+    box-shadow: 0px 5px 5px 0px #cfcfcf;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=180, Strength=5);
+}
+
+
+
+/* PAGE CONTACT */
+
+#adresse {
+    margin-top: 30px;
+    background-color: #F5F5F5;
+    height: 150px;
+}
+
+#adresse p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #636363;
+    font-weight: 200;
+}
+
+#adresse p span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+
+
+#gmap {
+    position: relative;
+}
+
+#gmap iframe {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#gmap:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+box-shadow: inset 0px 5px 5px 0px #000000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events:none;
+}
+
+
+/* Sweep To Right */
+
+
+[class^="hvr-"] {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  margin: 1em 0;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #2fd7b7;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px 5px 5px;
+  /* Prevent highlight colour when element is tapped */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+.hvr-sweep-to-right {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  border-radius: 5px 5px 5px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #25a48c;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 
 
