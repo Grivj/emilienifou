@@ -93,7 +93,7 @@ h2 {
 
 h3 {
 
-   font-size: 24px;
+   font-size: 22px;
    font-weight: 100;
    letter-spacing: 3px;
    text-transform: uppercase;
@@ -116,7 +116,7 @@ a.icon-back {
   text-transform: uppercase;
   color: #262829;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .icon-back {
@@ -229,6 +229,7 @@ nav a:focus {
 /* Call to action */
 
 .calltoaction {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -366,6 +367,14 @@ a.button {
   margin-bottom: 100px;
 }
 
+#infotarget p {
+  height:300px;
+  width:100%;
+  border:1px solid #ccc; 
+  overflow:scroll; 
+  padding:10px;
+}
+
 #infotarget ul {
   margin-bottom: 30px;
 }
@@ -375,6 +384,10 @@ a.button {
   margin: 15px 0;
   list-style-image: url('../images/check.svg');
 
+}
+
+.imgpatient {
+  margin-top: 40px
 }
 
 
@@ -518,13 +531,56 @@ form input, form textarea {
 }
 
 
+/* FOOTER */
+footer {
+  padding-bottom: 50px;
+}
+
+footer nav ul li a {
+  margin: 3px 0;
+  text-align: center;
+}
+
+footer ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer .social {
+  float: right;
+}
+
+footer .social li {
+  padding: 0px 10px 0 10px;
+}
+
+footer img {
+  width: 25px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media screen and (max-width: 750px) {
+
+  /* PAGE POUR QUI */
+
+#infotarget {
+  margin-bottom: 30px;
+}
+
+
+.imgpatient {
+  position: relative;
+  margin: 0 0 40px 0;
+  width: 100%;
+}
+
 
 }
 
